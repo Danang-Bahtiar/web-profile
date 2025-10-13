@@ -49,7 +49,7 @@ export default function Details() {
           Used Inquirer.js to create an interactive command-line interface, guiding users through setup options (e.g., project name, TypeScript or JavaScript, etc.).
         </li>
         <li>
-          Leveraged Node's fs and path modules extensively to generate directories, template files, and configurations dynamically.
+          {`Leveraged Node\'s fs and path modules extensively to generate directories, template files, and configurations dynamically.`}
         </li>
         <li>
           Integrated dependency installation and auto-initialization steps to provide a ready-to-run development environment immediately after project creation.
