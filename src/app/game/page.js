@@ -19,7 +19,7 @@ export default function Game() {
         <div className="flex flex-row">
           <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start gap-4 overflow-y-auto max-h-[calc(100vh-10rem)] pr-6">
             <ProjectCard
-              slug="/game/duel-links"
+              slug="/game/duelLinks"
               title="Yu-Gi-Oh! Duel Links"
               imageUrl="/game/DL.png"
               tech={"TCG"}

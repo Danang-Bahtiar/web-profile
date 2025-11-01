@@ -48,8 +48,8 @@ const styles = {
     "flex justify-between items-center border-4 border-white p-4 h-18 flex-row",
   headerLink: "text-xl font-mono font-medium text-cyan-400 tracking-widest",
   contentWrapper:
-    "border-4 border-white flex-grow flex flex-col lg:grid lg:grid-cols-[1fr_15%]",
-  contentMain: "p-4", // Wrapper for the content prop
+    "border-4 border-white flex-grow flex flex-col lg:grid lg:grid-cols-[1fr_15%] lg:grid-rows-[minmax(0,_1fr)]", // <-- ADDED grid-rows
+  contentMain: "p-4 h-full",
   sideMenu: // This is now ONLY for the large-screen sidebar
     "hidden lg:flex p-4 text-lg font-mono font-medium text-blue-400 tracking-widest flex-col justify-between gap-4 border-l-4 border-white h-full",
   menuNavSection: "flex flex-col gap-2",

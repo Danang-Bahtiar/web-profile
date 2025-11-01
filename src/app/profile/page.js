@@ -1,39 +1,62 @@
 import Layout from "@/component/layout/layout";
 import Image from "next/image";
 
+// --- Styles Object ---
+const styles = {
+  contentContainer: "p-4",
+  profileContainer:
+    "flex flex-col md:flex-row p-4 gap-8 items-center", // Stacks on small, row on medium+
+  imageWrapper: "w-full md:w-1/4 flex justify-center items-center", // Full width on small
+  imageCircle:
+    "relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white overflow-hidden", // Smaller on mobile
+  image: "object-contain",
+  textWrapper:
+    "w-full md:w-3/4 text-lg md:text-xl font-mono font-medium text-cyan-400 tracking-widest flex flex-col gap-6", // Full width on small, larger text on medium+
+  educationContainer: "m-4 font-mono tracking-widest",
+  educationHeading:
+    "text-xl md:text-2xl font-bold text-white mb-4 border-b-2 border-cyan-500 pb-2", // Responsive text
+  educationEntry: "text-lg md:text-xl", // Responsive text
+  educationEntryHeader:
+    "flex flex-col md:flex-row md:justify-between md:items-baseline", // Stacks on small
+  educationSchool: "font-semibold text-cyan-400",
+  educationDate:
+    "text-base text-gray-300 font-sans md:flex-shrink-0 md:ml-4", // No margin on small
+  educationDetails: "text-base text-gray-300 mt-1",
+};
+
 export default function Profile() {
   const header = {
     home: {
       slug: "/",
       label: "Home/",
     },
-    project: {
-      slug: "/project",
+    profile: {
+      slug: "/profile",
       label: "Profile/",
     },
   };
+
   return (
     <Layout
       headers={header}
       content={
-        <div className="p-4">
-          {/* 1. Styled Image Wrapper */}
-          <div className="flex flex-row p-4 gap-4 items-center">
-            {/* Profile Picture Column (centered) */}
-            <div className="w-1/4 flex justify-center items-center">
-              <div className="relative w-64 h-64 rounded-full border-4 border-white overflow-hidden">
+        <div className={styles.contentContainer}>
+          {/* 1. Profile Section */}
+          <div className={styles.profileContainer}>
+            {/* Profile Picture Column */}
+            <div className={styles.imageWrapper}>
+              <div className={styles.imageCircle}>
                 <Image
                   src={"/testpp.png"}
                   alt="photo profile"
                   fill
-                  className="object-contain"
+                  className={styles.image}
                 />
               </div>
             </div>
 
             {/* Text Content Column */}
-            {/* FIX: Added flex, flex-col, and gap to space out the paragraphs */}
-            <div className="w-3/4 text-xl font-mono font-medium text-cyan-400 tracking-widest flex flex-col gap-6">
+            <div className={styles.textWrapper}>
               <p>
                 Hello, I am Irwanto Danang Bahtiar. Student of computer science
                 focusing on backend development and game design. I enjoy
@@ -51,33 +74,27 @@ export default function Profile() {
             </div>
           </div>
 
-          {/* 2. Text Content Container */}
-          <div className="m-4 font-mono tracking-widest">
-            {/* 1. A clear, styled heading for the whole section */}
-            <h2 className="text-2xl font-bold text-white mb-4 border-b-2 border-cyan-500 pb-2">
-              Education
-            </h2>
-
-            {/* 2. A container for this specific education entry */}
-            <div className="text-xl">
-              {/* Top line using flexbox to separate the school and date */}
-              <div className="flex justify-between items-baseline">
-                <h3 className="font-semibold text-cyan-400">
+          {/* 2. Education Section */}
+          <div className={styles.educationContainer}>
+            <h2 className={styles.educationHeading}>Education</h2>
+            
+            <div className={styles.educationEntry}>
+              {/* Top line (School & Date) */}
+              <div className={styles.educationEntryHeader}>
+                <h3 className={styles.educationSchool}>
                   State Islamic University of Sunan Gunung Djati Bandung
                 </h3>
-                <p className="text-base text-gray-300 font-sans flex-shrink-0 ml-4">
-                  Sept 2021 - Present
-                </p>
+                <p className={styles.educationDate}>Sept 2021 - Present</p>
               </div>
 
-              {/* Details like GPA can go below */}
-              <p className="text-base text-gray-300 mt-1">
+              {/* Details */}
+              <p className={styles.educationDetails}>
                 Informatics - Science and Technology Faculty
               </p>
-              <p className="text-base text-gray-300 mt-1">GPA: 3.72</p>
+              <p className={styles.educationDetails}>GPA: 3.72</p>
             </div>
-
-            {/* You could easily add another education entry here by copying the div above */}
+            
+            {/* You could easily add another education entry here */}
           </div>
         </div>
       }
