@@ -1,115 +1,116 @@
-// pages/duelLinks.js
-import DeckCarousel from "@/component/layout/deckCarousel";
-import Layout from "@/component/layout/layout";
-import Image from "next/image"; // Import Image for the icon
+'use client'
 
-const kogDecks = [
-  { month: 'NOV', year: '2024', deckName: 'Lyrilusc', deckImage: '/game/duelLinks/lyrilusc.png' },
-  { month: 'NOV', year: '2024', deckName: 'Voidvelgr', deckImage: '/game/duelLinks/voidvelg.png' },
-  { month: 'DEC', year: '2024', deckName: 'Lyrilusc', deckImage: '/game/duelLinks/lyrilusc.png' },
-  { month: 'JAN', year: '2025', deckName: 'Predaplant', deckImage: '/game/duelLinks/predap.png' },
-  { month: 'JAN', year: '2025', deckName: 'Cyber Dragon', deckImage: '/game/duelLinks/cyber dragon.png' },
-  { month: 'FEB', year: '2025', deckName: 'Predaplant', deckImage: '/game/duelLinks/predap.png' },
-  { month: 'FEB', year: '2025', deckName: 'Gaia', deckImage: '/game/duelLinks/gaia.png' },
-  { month: 'MAR', year: '2025', deckName: 'Predaplant', deckImage: '/game/duelLinks/predap.png' },
-  { month: 'MAR', year: '2025', deckName: 'Gaia', deckImage: '/game/duelLinks/gaia.png' },
-  { month: 'APR', year: '2025', deckName: 'Subterror', deckImage: '/game/duelLinks/subterror.png' },
-  { month: 'APR', year: '2025', deckName: 'Cyber Dragon', deckImage: '/game/duelLinks/cyber dragon.png' },
-  { month: 'MAY', year: '2025', deckName: 'Subterror', deckImage: '/game/duelLinks/subterror.png' },
-  { month: 'MAY', year: '2025', deckName: 'Cyber Dragon', deckImage: '/game/duelLinks/cyber dragon.png' },
-  { month: 'JUN', year: '2025', deckName: 'Sevens Road', deckImage: '/game/duelLinks/sevenroad.png' },
-  { month: 'AUG', year: '2025', deckName: 'Despia', deckImage: '/game/duelLinks/despia.png' },
-  { month: 'SEP', year: '2025', deckName: 'Lyrilusc', deckImage: '/game/duelLinks/lyrilusc.png' },
-  { month: 'OCT', 'year': '2025', deckName: 'Shinobird', deckImage: '/game/duelLinks/shinobird.png' },
-  { month: 'OCT', year: '2025', deckName: 'Abyss Actor', deckImage: '/game/duelLinks/actor.png' },
-];
+import { useState, useEffect, useRef, useMemo } from "react";
+import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
+import Image from "next/image";
 
-// --- Styles Object ---
-const styles = {
-  // Main container: Switched to GRID
-  container: "h-full text-cyan-400 font-mono tracking-widest grid grid-rows-[auto_2fr_1fr]",
-  
-  // Top: Profile header
-  profileHeader: "flex flex-row gap-4 p-4 items-center border-b-2 border-white", // Removed flex-shrink
-  profileIcon: "relative w-24 h-24 overflow-hidden",
-  profileText: "flex flex-col",
-  profileName: "text-2xl font-bold text-white",
-  profileTitle: "text-lg text-gray-300",
-  
-  // Middle: Stats container
-  statsContainer: "flex flex-row p-2 min-h-0", // Removed flex-grow, added min-h-0 for safety
-  
-  // Stats Columns (Speed & Rush)
-  statsColumn: "w-1/2 p-4 flex flex-col gap-2 text-lg",
-  statsColumnLeft: "border-r-2 border-white",
-  statsColumnRight: "border-l-2 border-white pl-6",
-  statsTitle: "text-2xl font-bold text-white mb-2",
-  statsLabel: "text-gray-300",
-  statsValue: "text-cyan-400",
-  
-  // Bottom: Placeholder
-  bottomSection: "border-t-2 border-white p-4 min-h-0", // Removed h-1/3 and flex-shrink
-};
-
-
-export default function DuelLinks() {
-  const header = {
-    home: { slug: "/", label: "Home/" },
-    project: { slug: "/game", label: "Games/" },
-    game: { slug: "/duelLinks", label: "Yu-Gi-Oh! Duel Links/" },
-  };
-
+// --- Deck Card ---
+export function DeckCard2({ month, year, deckImage, deckName }) {
   return (
-    <Layout
-      headers={header}
-      content={
-        <div className={styles.container}>
-          {/* Top Section (Profile) - ROW 1 (auto) */}
-          <div className={styles.profileHeader}>
-            <div className={styles.profileIcon}>
-              <Image
-                src={"/game/duelLinks/kogicon.png"}
-                alt="Duelist Icon"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className={styles.profileText}>
-              <p className={styles.profileName}>Dan Koyuki</p>
-              <p className={styles.profileTitle}>King of Games</p>
-            </div>
-          </div>
+    <div
+      className="
+        flex w-full max-w-xl rounded-lg bg-cyan-900/50 font-mono h-30
+        transform transition-transform duration-300 hover:scale-105 hover:bg-cyan-900
+      "
+    >
+      <div className="relative w-1/3 h-full overflow-hidden rounded-l-lg flex items-center justify-center bg-black/20">
+        <Image
+          src={deckImage}
+          alt={deckName}
+          width={2250}
+          height={1500}
+          className="h-full w-auto object-contain"
+        />
+      </div>
 
-          {/* Middle Section (Stats) - ROW 2 (2fr) */}
-          <div className={styles.statsContainer}>
-            {/* Speed Duel Column */}
-            <div className={`${styles.statsColumn} ${styles.statsColumnLeft}`}>
-              <p className={styles.statsTitle}>Speed Duel</p>
-              <p><span className={styles.statsLabel}>Rank: </span>Platinum Rank 6</p>
-              <p><span className={styles.statsLabel}>K.o.G. Count: </span>10</p>
-              <p><span className={styles.statsLabel}>PvP Duels: </span>1847</p>
-              <p><span className={styles.statsLabel}>PvP Victories: </span>1128</p>
-              <p><span className={styles.statsLabel}>Most Used: </span>Predaplant, Lyrilusc</p>
-            </div>
-            
-            {/* Rush Duel Column */}
-            <div className={`${styles.statsColumn} ${styles.statsColumnRight}`}>
-              <p className={styles.statsTitle}>Rush Duel</p>
-              <p><span className={styles.statsLabel}>Rank: </span>Silver Rank 5</p>
-              <p><span className={styles.statsLabel}>K.o.G. Count: </span>8</p>
-              <p><span className={styles.statsLabel}>PvP Duels: </span>736</p>
-              <p><span className={styles.statsLabel}>PvP Victories: </span>446</p>
-              <p><span className={styles.statsLabel}>Most Used: </span>Cyber Dragon</p>
-            </div>
-          </div>
-
-          {/* Bottom Section (Carousel) - ROW 3 (1fr) */}
-          <div className={styles.bottomSection}>
-            <DeckCarousel title="King of Games Decks - Monthly Archive" data={kogDecks} />
-          </div>
-        </div>
-      }
-      currentPageLabel={"None"}
-    />
+      <div className="flex flex-col justify-center p-4 w-2/3">
+        <h3 className="text-lg font-bold text-white tracking-widest truncate">
+          {month} {year}
+        </h3>
+        <p className="font-bold text-white tracking-widest truncate">{deckName}</p>
+      </div>
+    </div>
   );
 }
+
+// --- Carousel Component ---
+const DeckCarousel = ({ data, title }) => {
+  // ✅ Group decks by Month + Year
+  const groupedData = useMemo(() => {
+    const groups = {};
+    for (const item of data) {
+      const key = `${item.month}-${item.year}`;
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(item);
+    }
+
+    // Sort months by year, then by month order (JAN..DEC)
+    const monthOrder = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+    const sortedKeys = Object.keys(groups).sort((a, b) => {
+      const [ma, ya] = a.split("-");
+      const [mb, yb] = b.split("-");
+      if (ya !== yb) return Number(ya) - Number(yb);
+      return monthOrder.indexOf(ma) - monthOrder.indexOf(mb);
+    });
+
+    // Return sorted arrays of decks
+    return sortedKeys.map(k => groups[k]);
+  }, [data]);
+
+  // ✅ Start at the *latest group* (last index)
+  const [currentIndex, setCurrentIndex] = useState(groupedData.length - 1);
+
+  const carouselRef = useRef(null);
+
+  // --- Looping logic ---
+  const handlePrev = () => {
+    setCurrentIndex(prev => (prev === 0 ? groupedData.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex(prev => (prev === groupedData.length - 1 ? 0 : prev + 1));
+  };
+
+  // --- Current group ---
+  const currentGroup = groupedData[currentIndex] || [];
+
+  return (
+    <div className="w-full max-w-6xl mx-auto font-mono h-full flex flex-col">
+      {/* Header */}
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-xl font-bold text-white">{title}</h3>
+      </div>
+
+      {/* Carousel Controls */}
+      <div className="flex items-center gap-2">
+        <button
+          onClick={handlePrev}
+          className="text-3xl text-cyan-400 hover:text-white transition-colors"
+        >
+          <BsArrowLeftSquareFill />
+        </button>
+
+        {/* Cards */}
+        <div className="flex-1 flex justify-center gap-4 overflow-hidden" ref={carouselRef}>
+          {currentGroup.slice(0, 2).map((deck, i) => (
+            <DeckCard2 key={i} {...deck} />
+          ))}
+          {currentGroup.length < 2 && (
+            <div className="w-full text-center text-gray-500 italic p-4">
+              Only 1 deck this month
+            </div>
+          )}
+        </div>
+
+        <button
+          onClick={handleNext}
+          className="text-3xl text-cyan-400 hover:text-white transition-colors"
+        >
+          <BsArrowRightSquareFill />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default DeckCarousel;
