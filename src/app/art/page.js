@@ -12,7 +12,7 @@ export default function Art() {
 
   const header = {
     home: { slug: "/", label: "Home/" },
-    project: { slug: "/art", label: "Art/" },
+    project: { slug: "/art", label: "Arts/" },
   };
 
   // An array of art pieces to make the code cleaner

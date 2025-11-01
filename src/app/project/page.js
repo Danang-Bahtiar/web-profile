@@ -18,7 +18,7 @@ export default function Project() {
       headers={header}
       content={
         <div className="flex flex-row">
-          <div className="w-1/6 border-r-4 border-white p-4 text-xl font-mono font-medium text-blue-400 tracking-widest flex flex-col gap-2">
+          <div className="hidden w-1/6 border-r-4 border-white p-4 text-xl font-mono font-medium text-blue-400 tracking-widest lg:flex flex-col gap-2">
             <ProgressBar label={"MongoDB"} count={3} />
             <ProgressBar label={"NodeJS"} count={4} />
             <ProgressBar label={"Discordjs"} count={1} />
@@ -26,7 +26,7 @@ export default function Project() {
             <ProgressBar label={"NextJS"} count={1} />
             <ProgressBar label={"Android"} count={1} />
           </div>
-          <div className="w-5/6 p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start gap-4 overflow-y-auto max-h-[calc(100vh-10rem)] pr-6">
+          <div className="w-full lg:w-5/6 p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start gap-4 overflow-y-auto max-h-[calc(100vh-10rem)] pr-6">
             <ProjectCard
               slug="/project/armorize"
               title="Armorize Discord Edition"

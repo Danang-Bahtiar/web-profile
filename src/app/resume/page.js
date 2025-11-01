@@ -1,4 +1,3 @@
-import ProjectCard from "@/component/cards/projectCard";
 import ResumeCard from "@/component/cards/resumeCard";
 import Layout from "@/component/layout/layout";
 

@@ -9,7 +9,7 @@ export default function Game() {
     },
     project: {
       slug: "/game",
-      label: "Game/",
+      label: "Games/",
     },
   };
   return (
@@ -67,7 +67,6 @@ export default function Game() {
               tech={"Education"}
               tag="Inactive"
             />
-            {/* Add more ProjectCard components to see the scrolling effect */}
           </div>
         </div>
       }
