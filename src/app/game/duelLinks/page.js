@@ -31,7 +31,7 @@ export default function DuelLinks() {
   const header = {
     home: { slug: "/", label: "Home/" },
     project: { slug: "/game", label: "Games/" },
-    game: { slug: "/duelLinks", label: "Yu-Gi-Oh! Duel Links/" },
+    game: { slug: "/game/duelLinks", label: "Yu-Gi-Oh! Duel Links/" },
   };
 
   const stats = {
@@ -57,7 +57,7 @@ export default function DuelLinks() {
       content={
         <div className="h-full text-cyan-400 font-mono tracking-widest">
           {/* Top Section */}
-          <div className="flex flex-row gap-4 p-4 items-center border-b-2 border-white md:flex-row flex-wrap md:gap-4">
+          <div className="flex flex-row gap-4 p-4 items-center border-b-2 border-white flex-wrap md:gap-4">
             <div className="relative w-14 h-14 md:w-20 md:h-20 overflow-hidden">
               <Image
                 src="/game/duelLinks/kogicon.png"
