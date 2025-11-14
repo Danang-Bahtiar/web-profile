@@ -4,7 +4,7 @@ import { useState, useRef, useMemo } from "react";
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 import Image from "next/image";
 
-// --- Deck Card ---
+// --- Deck Card (Unchanged) ---
 export function DeckCard2({ month, year, deckImage, deckName }) {
   return (
     <div
@@ -19,7 +19,7 @@ export function DeckCard2({ month, year, deckImage, deckName }) {
           alt={deckName}
           width={2250}
           height={1500}
-          className="h-full w-auto object-contain"
+          className="h-full w-auto object-contain" priority
         />
       </div>
 
@@ -33,7 +33,7 @@ export function DeckCard2({ month, year, deckImage, deckName }) {
   );
 }
 
-// --- Carousel Component ---
+// --- Carousel Component (Modified) ---
 const DeckCarousel = ({ data, title }) => {
   // ✅ Group decks by Month + Year
   const groupedData = useMemo(() => {
@@ -92,14 +92,16 @@ const DeckCarousel = ({ data, title }) => {
 
         {/* Cards */}
         <div className="flex-1 flex justify-center gap-4 overflow-hidden" ref={carouselRef}>
-          {currentGroup.slice(0, 2).map((deck, i) => (
+          {/* --- MODIFICATION 1: Changed slice from 2 to 3 --- */}
+          {currentGroup.slice(0, 3).map((deck, i) => (
             <DeckCard2 key={i} {...deck} />
           ))}
-          {currentGroup.length < 2 && (
-            <div className="w-full text-center text-gray-500 italic p-4">
-              Only 1 deck this month
-            </div>
-          )}
+
+          {/* --- MODIFICATION 2: Removed conditional message ---
+            The old message block had 'w-full' which breaks this flex layout.
+            The 'justify-center' on the parent div now handles groups
+            with 1 or 2 cards perfectly by centering them.
+          */}
         </div>
 
         <button

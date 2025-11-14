@@ -14,7 +14,7 @@ export default function ImageCard({ title, imageUrl, onClick }) {
     >
       {/* Image container remains the same */}
       <div className="relative w-full h-36 overflow-hidden rounded-md bg-black/20">
-        <Image src={imageUrl} alt={title} fill className="object-cover" />
+        <Image src={imageUrl} alt={title} fill className="object-cover" priority/>
       </div>
 
       {/* Title display remains the same */}

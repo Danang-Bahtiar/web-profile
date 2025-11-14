@@ -27,7 +27,7 @@ export default function ImageModal({ imageUrl, onClose }) {
           src={imageUrl} 
           alt="Full-size view" 
           fill 
-          className="object-contain" 
+          className="object-contain" priority
         />
       </div>
     </div>

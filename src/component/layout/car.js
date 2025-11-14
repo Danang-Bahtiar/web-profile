@@ -27,6 +27,7 @@ function DeckCard({ item }) {
           className="object-contain"
           // Good practice to provide sizes for 'fill' images
           sizes="(max-width: 768px) 33vw, 250px"
+          priority
         />
       </div>
 

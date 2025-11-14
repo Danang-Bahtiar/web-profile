@@ -23,6 +23,7 @@ export default function Art() {
     { title: "Headshot Art Dan v2", imageUrl: "/art/headshot1.avif" },
     { title: "Headshot Art Dan vCurrent", imageUrl: "/art/headshot2.png" },
     { title: "DiscrafterJS Logo", imageUrl: "/art/discrafter.png" },
+    { title: "Armorize Discord Logo", imageUrl: "/projects/armorizeDiscord.png"},
   ];
 
   return (

@@ -40,17 +40,17 @@ export default function Game() {
               tag="Active"
             />
             <ProjectCard
-              slug="/game/master-duel"
-              title="Yu-Gi-Oh! Master Duel"
-              imageUrl="/game/md.png"
-              tech={"TCG"}
-              tag="Semi-Active"
+              slug="/game/mahjong"
+              title="Mahjong Soul"
+              imageUrl="/game/MahjongSoul.webp"
+              tech={"Table-Top"}
+              tag="Active"
             />
             <ProjectCard
-              slug="/game/ptcgp"
-              title="Pokemon TCG Pocket"
-              imageUrl="/game/ptcgp.png"
-              tech={"TCG"}
+              slug="/game/arcade"
+              title="Google Arcade"
+              imageUrl="/game/arcade.png"
+              tech={"Education"}
               tag="Inactive"
             />
             <ProjectCard
@@ -61,10 +61,17 @@ export default function Game() {
               tag="Semi-Active"
             />
             <ProjectCard
-              slug="/game/arcade"
-              title="Google Arcade"
-              imageUrl="/game/arcade.png"
-              tech={"Education"}
+              slug="/game/master-duel"
+              title="Yu-Gi-Oh! Master Duel"
+              imageUrl="/game/md.png"
+              tech={"TCG"}
+              tag="Inactive"
+            />
+            <ProjectCard
+              slug="/game/ptcgp"
+              title="Pokemon TCG Pocket"
+              imageUrl="/game/ptcgp.png"
+              tech={"TCG"}
               tag="Inactive"
             />
           </div>

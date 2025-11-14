@@ -14,7 +14,7 @@ export default function ResumeCard({ href, title, imageUrl, tag }) {
     >
       {/* 2. Image container remains the same. */}
       <div className="relative w-full h-32 overflow-hidden rounded-md bg-black/20">
-        <Image src={imageUrl} alt={title} fill className="object-cover" />
+        <Image src={imageUrl} alt={title} fill className="object-cover" priority/>
       </div>
 
       {/* 3. The project title and tag below the image. */}

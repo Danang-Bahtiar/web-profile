@@ -14,7 +14,7 @@ export default function HOK() {
     username: "dan_koyuki",
     rank: "Grandmaster - Legend Undying Phoenix",
     season: "2025 S4 (S12)",
-    star: 100,
+    star: 102,
     favoriteHero: [
       {
         name: "Kongming",
@@ -48,7 +48,7 @@ export default function HOK() {
       },
     ],
     role: "Mage / Assassin (Midlane, Jungler)",
-    peakRating: 1538,
+    peakRating: 1600,
     overallWinrate: "54%",
   };
 

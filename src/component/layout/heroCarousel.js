@@ -19,7 +19,7 @@ export function HeroCard({ name, heroPower, winrate, image }) {
           alt={name}
           width={2048}
           height={2048}
-          className="h-full w-auto object-contain"
+          className="h-full w-auto object-contain" priority
         />
       </div>
 

@@ -103,6 +103,7 @@ export default function Home() {
           width={2048}
           height={2048}
           className={styles.sidebarImage}
+          priority
         />
       </div>
 
@@ -124,6 +125,7 @@ export default function Home() {
                 alt="photo profile"
                 fill
                 className={styles.profileImage}
+                priority
               />
             </div>
 

@@ -5,24 +5,27 @@ import Layout from "@/component/layout/layout";
 import Image from "next/image";
 
 const kogDecks = [
-  { month: "NOV", year: "2024", deckName: "Lyrilusc", deckImage: "/game/duelLinks/lyrilusc.png" },
-  { month: "NOV", year: "2024", deckName: "Voidvelg", deckImage: "/game/duelLinks/voidvelg.png" },
-  { month: "DEC", year: "2024", deckName: "Lyrilusc", deckImage: "/game/duelLinks/lyrilusc.png" },
-  { month: "JAN", year: "2025", deckName: "Predaplant", deckImage: "/game/duelLinks/predap.png" },
-  { month: "JAN", year: "2025", deckName: "Cyber Dragon", deckImage: "/game/duelLinks/cyber dragon.png" },
-  { month: "FEB", year: "2025", deckName: "Predaplant", deckImage: "/game/duelLinks/predap.png" },
-  { month: "FEB", year: "2025", deckName: "Metarion Gaia", deckImage: "/game/duelLinks/gaia.png" },
-  { month: "MAR", year: "2025", deckName: "Predaplant", deckImage: "/game/duelLinks/predap.png" },
-  { month: "MAR", year: "2025", deckName: "Metarion Gaia", deckImage: "/game/duelLinks/gaia.png" },
-  { month: "APR", year: "2025", deckName: "Subterror", deckImage: "/game/duelLinks/subterror.png" },
-  { month: "APR", year: "2025", deckName: "Cyber Dragon", deckImage: "/game/duelLinks/cyber dragon.png" },
-  { month: "MAY", year: "2025", deckName: "Subterror", deckImage: "/game/duelLinks/subterror.png" },
-  { month: "MAY", year: "2025", deckName: "Cyber Dragon", deckImage: "/game/duelLinks/cyber dragon.png" },
-  { month: "JUN", year: "2025", deckName: "Sevens Road", deckImage: "/game/duelLinks/sevenroad.png" },
-  { month: "AUG", year: "2025", deckName: "Despia", deckImage: "/game/duelLinks/marik.png" },
-  { month: "SEP", year: "2025", deckName: "Lyrilusc", deckImage: "/game/duelLinks/lyrilusc.png" },
-  { month: "OCT", year: "2025", deckName: "Shinobird", deckImage: "/game/duelLinks/shinobird.png" },
-  { month: "OCT", year: "2025", deckName: "Full Metariactor", deckImage: "/game/duelLinks/actor.png" },
+  { month: "NOV", year: "2024", deckName: "Lyrilusc", deckImage: "/game/duelLinks/LyriluscKCKOG.png" },
+  { month: "NOV", year: "2024", deckName: "Voidvelg", deckImage: "/game/duelLinks/VoidvelgKOG.png" },
+  { month: "DEC", year: "2024", deckName: "Lyrilusc", deckImage: "/game/duelLinks/LyriluscKOG.png" },
+  { month: "DEC", year: "2024", deckName: "Cyber Dragon", deckImage: "/game/duelLinks/CydraGR.png" },
+  { month: "JAN", year: "2025", deckName: "Predaplant", deckImage: "/game/duelLinks/PredaplantKOG.png" },
+  { month: "JAN", year: "2025", deckName: "Cyber Dragon", deckImage: "/game/duelLinks/CydraKOG.png" },
+  { month: "FEB", year: "2025", deckName: "Predaplant", deckImage: "/game/duelLinks/PredaplantKCKOG.png" },
+  { month: "FEB", year: "2025", deckName: "Metarion Gaia", deckImage: "/game/duelLinks/MetaGaiaKOG.png" },
+  { month: "MAR", year: "2025", deckName: "Predaplant", deckImage: "/game/duelLinks/PredaplantKOG.png" },
+  { month: "MAR", year: "2025", deckName: "Metarion Gaia", deckImage: "/game/duelLinks/MetaGaiaGRKOG.png" },
+  { month: "APR", year: "2025", deckName: "Subterror", deckImage: "/game/duelLinks/SubterrorKCKOG.png" },
+  { month: "APR", year: "2025", deckName: "Cyber Dragon", deckImage: "/game/duelLinks/CydraKOG.png" },
+  { month: "MAY", year: "2025", deckName: "Subterror", deckImage: "/game/duelLinks/SubterrorKOG.png" },
+  { month: "MAY", year: "2025", deckName: "Cyber Dragon", deckImage: "/game/duelLinks/CydraKOG.png" },
+  { month: "JUN", year: "2025", deckName: "Sevens Road", deckImage: "/game/duelLinks/SevenRoadsKOG.png" },
+  { month: "AUG", year: "2025", deckName: "Despia", deckImage: "/game/duelLinks/BrandedKOG.png" },
+  { month: "SEP", year: "2025", deckName: "Lyrilusc", deckImage: "/game/duelLinks/LyriluscKCKOG.png" },
+  { month: "OCT", year: "2025", deckName: "Shinobird", deckImage: "/game/duelLinks/ShinobirdKOG.png" },
+  { month: "OCT", year: "2025", deckName: "Full Metariactor", deckImage: "/game/duelLinks/ActorKOG.png" },
+  { month: "NOV", year: "2025", deckName: "Floowandereeze", deckImage: "/game/duelLinks/FlooKC.png" },
+  { month: "NOV", year: "2025", deckName: "Shinobird", deckImage: "/game/duelLinks/ShinobirdKOG.png" },
 ];
 
 export default function DuelLinks() {
@@ -36,14 +39,14 @@ export default function DuelLinks() {
 
   const stats = {
     Speed: {
-      rank: "Platinum Rank 6",
-      kog: 10,
+      rank: "King of Games",
+      kog: 11,
       duels: 1847,
       wins: 1128,
       most: "Predaplant, Lyrilusc",
     },
     Rush: {
-      rank: "Silver Rank 5",
+      rank: "Gold Rank 1",
       kog: 8,
       duels: 736,
       wins: 446,
@@ -64,6 +67,7 @@ export default function DuelLinks() {
                 alt="Duelist Icon"
                 fill
                 className="object-contain"
+                priority
               />
             </div>
             <div className="flex flex-col">

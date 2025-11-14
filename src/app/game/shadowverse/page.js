@@ -1,5 +1,6 @@
 import HeroCarousel from "@/component/layout/heroCarousel";
 import Layout from "@/component/layout/layout";
+import SVCarousel from "@/component/layout/shadowverseCarousel";
 import Image from "next/image";
 
 export default function Shadowverse() {
@@ -13,18 +14,41 @@ export default function Shadowverse() {
   const currentStats = {
     username: "Dan Koyuki",
     title: "Promising Rookie | Casual Player",
-    rank: "B0",
-    RP: 22266,
-    group: "Topaz",
-    favoriteDeck: "Abysscraft Mode"
+    rank: "B1",
+    RP: 26544,
+    group: "Sapphire",
+    favoriteDeck: "Abysscraft Mode",
   };
 
+  const deck = [
+    {
+      name: "Swordcraft Aggro",
+      set: "Legends Rise",
+      image: "/game/shadowverse/AlbertSV.png",
+    },
+    {
+      name: "Abysscraft Aggro",
+      set: "Infinity Evolved",
+      image: "/game/shadowverse/ExellaSV.png",
+    },
+    {
+      name: "Abysscraft Mode",
+      set: "Heirs of the Omen",
+      image: "/game/shadowverse/ShamNachaSV.png",
+    },
+    {
+      name: "Swordcraft",
+      set: "Skybound Dragons",
+      image: "/game/shadowverse/SeofonSV.png",
+    },
+  ];
+
   const pastRank = {
-    "Abysscraft": 82,
-    "Swordcraft": 13,
-    "Forestcraft": 5,
-    "Runecraft": 2,
-    "Portalcraft": 2,
+    Abysscraft: 82,
+    Swordcraft: 33,
+    Forestcraft: 5,
+    Runecraft: 2,
+    Portalcraft: 2,
     // "Dragoncraft": 0,
     // "Heavencraft": 0,
   };
@@ -63,9 +87,7 @@ export default function Shadowverse() {
             {/* Dual-column for desktop */}
             <div className="flex flex-col lg:flex-row">
               <div className="w-full md:w-1/2 p-4 md:border-r-2 border-white">
-                <p className="text-2xl font-bold text-white mb-2">
-                  Stats
-                </p>
+                <p className="text-2xl font-bold text-white mb-2">Stats</p>
                 <p>
                   <span className="text-gray-300">Group: </span>
                   {currentStats.group}
@@ -89,27 +111,26 @@ export default function Shadowverse() {
                   Class Wins in Ranked
                 </p>
                 <ul className="space-y-1 text-gray-300">
-                  {Object.entries(pastRank)
-                    .map(([season, rank]) => (
-                      <li key={season}>
-                        <span className="font-semibold text-white">
-                          {season}:
-                        </span>{" "}
-                        {rank}
-                      </li>
-                    ))}
+                  {Object.entries(pastRank).map(([season, rank]) => (
+                    <li key={season}>
+                      <span className="font-semibold text-white">
+                        {season}:
+                      </span>{" "}
+                      {rank}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
 
             {/* Bottom Section */}
             <div className="border-t-2 border-white p-2 min-h-0">
-              {/* <div className="hidden md:block">
-                <HeroCarousel
-                  title="Most Played Heroes"
-                  data={currentStats.favoriteHero}
+              <div className="hidden md:block">
+                <SVCarousel
+                  title="Deck used in each Set Release"
+                  data={deck}
                 />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

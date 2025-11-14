@@ -51,6 +51,7 @@ export default function Profile() {
                   alt="photo profile"
                   fill
                   className={styles.image}
+                  priority
                 />
               </div>
             </div>

@@ -30,14 +30,14 @@ export default function Project() {
             <ProjectCard
               slug="/project/armorize"
               title="Armorize Discord Edition"
-              imageUrl="/logo.png"
+              imageUrl="/projects/armorizeDiscord.png"
               tech="DiscrafterJS"
               tag="Game"
             />
             <ProjectCard
               slug="/project/xrohr"
               title="XRohrJS"
-              imageUrl="/logo.png"
+              imageUrl="/projects/xrohrJS.png"
               tech={"TypeScript, Express"}
               tag="Mini-Framework"
             />
@@ -49,23 +49,9 @@ export default function Project() {
               tag="Mini-Framework"
             />
             <ProjectCard
-              slug="/project/discrafter/create"
-              title="Create Discrafter Bot"
-              imageUrl="/logo.png"
-              tech={"NodeJS"}
-              tag="Scaffolder"
-            />
-            <ProjectCard
-              slug="/project/xrohr/create"
-              title="Create Xrohr Express"
-              imageUrl="/logo.png"
-              tech={"NodeJS"}
-              tag="Scaffolder"
-            />
-            <ProjectCard
               slug="/project/mongooseConnection"
-              title="Mongoose Connection Manager"
-              imageUrl="/projects/icon_atlasmobilizer.png"
+              title="MyriadJS"
+              imageUrl="/projects/MyriadJS.png"
               tech="MongoDB, Mongoose"
               tag="Mini-Framework"
             />

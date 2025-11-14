@@ -13,7 +13,7 @@ export default function ProjectCard({ slug, title, imageUrl, tech, tag }) {
     >
       {/* 2. A container for the image with a fixed aspect ratio */}
       <div className="relative w-full h-32 overflow-hidden rounded-md bg-black/20">
-        <Image src={imageUrl} alt={title} fill className="object-cover" />
+        <Image src={imageUrl} alt={title} fill className="object-cover" priority />
       </div>
 
       {/* 3. The project title below the image */}
