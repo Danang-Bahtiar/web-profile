@@ -47,8 +47,8 @@ export default function Details() {
       </SectionHeader>
       <ul className="list-disc pl-8 space-y-4 font-mono text-lg text-gray-300 tracking-wide leading-relaxed">
         <li>
-          Automated all common boilerplate via a{" "}
-          <strong>config-driven architecture</strong>, making a single{" "}
+          Automated all common boilerplate via a
+          <strong>config-driven architecture</strong>, making a single
           <code>xrohr.config.js</code> file the "single source of truth" for
           server setup.
         </li>
@@ -108,7 +108,7 @@ export default function Details() {
           internal logic via encapsulation.
         </li>
         <li>
-          Gained deep experience in{" "}
+          Gained deep experience in
           <strong>framework-level architecture</strong>, understanding the
           trade-offs between flexibility (like vanilla Express) and opinionated
           design (like NestJS).
