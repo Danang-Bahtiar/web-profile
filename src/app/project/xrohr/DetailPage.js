@@ -36,7 +36,7 @@ export default function Details() {
           applications scaled.
         </li>
         <li>
-          Faced the <strong>"all-or-nothing" dilemma</strong> between vanilla
+          Faced the <strong>&quot;all-or-nothing&quot; dilemma</strong> between vanilla
           Express (often too minimal) and heavy, complex frameworks (often
           overkill for medium-sized projects).
         </li>
@@ -49,7 +49,7 @@ export default function Details() {
         <li>
           Automated all common boilerplate via a
           <strong>config-driven architecture</strong>, making a single
-          <code>xrohr.config.js</code> file the "single source of truth" for
+          <code>xrohr.config.js</code> file the &quot;single source of truth&quot; for
           server setup.
         </li>
         <li>
@@ -58,7 +58,7 @@ export default function Details() {
           designated directories.
         </li>
         <li>
-          Provided "batteries-included" <strong>optional modules</strong>
+          Provided &quot;batteries-included&quot; <strong>optional modules</strong>
           (like <code>SparkLite</code>, <code>Rheos</code>, <code>Memoria</code>
           ) that can be enabled or disabled, creating the perfect middle-ground
           framework.
