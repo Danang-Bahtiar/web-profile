@@ -73,8 +73,7 @@ export default function Docs() {
               from a file named <strong>`xrohr.config.js`</strong>.
             </li>
             <li>
-              Create the `xrohr.config.js` file in the{" "}
-              <strong>root directory</strong> of your project.
+              Create the `xrohr.config.js` file in the <strong>root directory</strong> of your project.
             </li>
             <li>
               Copy and modify the following code example as needed for your

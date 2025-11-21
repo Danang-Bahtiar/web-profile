@@ -171,8 +171,8 @@ export default function Logs() {
           visibility and debugging.
         </li>
         <li>
-          <strong className="text-yellow-400">Refactored</strong>: Updated{" "}
-          <code>AxiosCall</code> configuration to support{" "}
+          <strong className="text-yellow-400">Refactored</strong>: Updated
+          <code>AxiosCall</code> configuration to support
           <strong>lazy data evaluation</strong> (functions), allowing for
           runtime payload resolution.
         </li>
