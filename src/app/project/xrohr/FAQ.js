@@ -19,7 +19,7 @@ export default function FAQ() {
           </p>
           <p className="text-neutral-400 mb-4">
             The <strong>`TemplateRecipe`</strong> is the standard, most common
-            type you will use. As shown in the "Creating Your First Route"
+            type you will use. As shown in the &quot;Creating Your First Route&quot;
             guide, it uses a strict, predefined template designed for
             manually-written route handlers.
           </p>
@@ -36,7 +36,7 @@ export default function FAQ() {
             conceptual type.
           </p>
           <p className="text-neutral-400 mb-4">
-            It is intended to be used as a metadata "blueprint" that tells the
+            It is intended to be used as a metadata &quot;blueprint&quot; that tells the
             XRohrJS server to <strong>dynamically generate</strong> an endpoint
             (e.g., from a database or a remote source) without a pre-written
             handler function.
@@ -60,13 +60,13 @@ export default function FAQ() {
           </p>
           <p className="text-neutral-400 mb-4">
             This is an advanced feature. These functions do not receive `req` or
-            `res`. They are designed to be used in "pipelines," such as
+            `res`. They are designed to be used in &quot;pipelines,&quot; such as
             formatting data for a <strong>`ConstructRecipe`</strong> or in an
             event handler.
           </p>
 
           <h3 className="text-lg font-semibold text-white mt-6 mb-2">
-            Example: A 'format-user' Middleware
+            Example: A &apos;format-user&apos; Middleware
           </h3>
           <p className="text-neutral-400 mb-2">
             Create a file named{" "}
@@ -104,17 +104,17 @@ export default XrohrJS.Middleware({
             to any route.
           </p>
           <p className="mb-4">
-            In your route definition file, simply add the middleware's{" "}
+            In your route definition file, simply add the middleware&apos;s{" "}
             <strong>file name</strong> (as a string) to the{" "}
             <strong>`middlewares`</strong> array.
           </p>
 
           <h3 className="text-lg font-semibold text-white mt-6 mb-2">
-            Example: Applying the 'verify' Middleware
+            Example: Applying the &apos;verify&apos; Middleware
           </h3>
           <p className="text-neutral-400 mb-2">
-            Let's modify our <strong>`./src/routes/health.js`</strong> file to
-            use the "verify" middleware we just created.
+            Let&apos;s modify our <strong>`./src/routes/health.js`</strong> file to
+            use the &quot;verify&quot; middleware we just created.
           </p>
           <CodeDisplay
             code={`import { XrohrJS } from '@dan_koyuki/xrohrjs'

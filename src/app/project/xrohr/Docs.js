@@ -181,13 +181,13 @@ client.start();`}
         <div>
           <p className="mb-4">
             <strong>XRohrJS</strong> automatically imports and registers all
-            route files found inside the <strong>`./src/routes`</strong>{" "}
+            route files found inside the <strong>`./src/routes`</strong>
             directory that end with
             <strong>`.js`</strong> or <strong>`.ts`</strong>.
           </p>
           <p className="text-neutral-400 mb-4">
             A single route file can contain multiple endpoints, all registered
-            under the file's specified <strong>`basePath`</strong>.
+            under the file&apos;s specified <strong>`basePath`</strong>.
           </p>
 
           <h3 className="text-lg font-semibold text-white mt-6 mb-2">
@@ -240,12 +240,12 @@ export default XrohrJS.Route({
           <p className="mb-4">
             The framework automatically loads all files from the
             <strong>`./src/middlewares`</strong> directory. The{" "}
-            <strong>file name</strong> (e.g., "verify") is used as the key to
+            <strong>file name</strong> (e.g., &quot;verify&quot;) is used as the key to
             access it.
           </p>
 
           <h3 className="text-lg font-semibold text-white mt-6 mb-2">
-            Example: An 'express' Middleware
+            Example: An &apos;express&apos; Middleware
           </h3>
           <p className="text-neutral-400 mb-2">
             Create a file named <strong>`./src/middlewares/verify.js`</strong>.

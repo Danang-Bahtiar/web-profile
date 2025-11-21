@@ -171,7 +171,7 @@ console.log(result); // Output: { success: true, timestamp: ... }`}
           </p>
           <p className="mb-4">
             It is designed to be a transient replacement for services like Redis
-            during development or for data that doesn't need to persist after a
+            during development or for data that doesn&apos;t need to persist after a
             server restart.
           </p>
 
