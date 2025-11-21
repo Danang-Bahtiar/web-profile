@@ -1,6 +1,6 @@
 const ProgressBar = ({ label, count }) => {
   // You can change the total count here for your specific use case
-  const totalCount = 8;
+  const totalCount = 6;
   
   // Calculate the percentage, ensuring it doesn't go over 100%
   const percentage = Math.min((count / totalCount) * 100, 100);

@@ -19,8 +19,11 @@ export default function Project() {
       content={
         <div className="flex flex-row">
           <div className="hidden w-1/6 border-r-4 border-white p-4 text-xl font-mono font-medium text-blue-400 tracking-widest lg:flex flex-col gap-2">
+            <h3 className="text-cyan-400 font-bold mb-4 font-mono text-sm">
+              <span className="text-gray-500 mr-2">$</span>TECH_USAGE
+            </h3>
             <ProgressBar label={"MongoDB"} count={3} />
-            <ProgressBar label={"NodeJS"} count={4} />
+            <ProgressBar label={"NodeJS"} count={5} />
             <ProgressBar label={"Discordjs"} count={1} />
             <ProgressBar label={"Express"} count={1} />
             <ProgressBar label={"NextJS"} count={1} />

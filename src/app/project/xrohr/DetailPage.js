@@ -49,7 +49,7 @@ export default function Details() {
         <li>
           Automated all common boilerplate via a
           <strong>config-driven architecture</strong>, making a single
-          <code>xrohr.config.js</code> file the &quot;single source of truth&quot; for
+          <code> xrohr.config.js</code> file the &quot;single source of truth&quot; for
           server setup.
         </li>
         <li>

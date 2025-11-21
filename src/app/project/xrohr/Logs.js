@@ -126,6 +126,62 @@ export default function Logs() {
           bugs.
         </li>
       </ul>
+
+      <SectionHeader>
+        <div className="w-full flex flex-row justify-between items-baseline font-mono tracking-widest px-2">
+          <h2 className="text-xl font-bold text-white">
+            v1.0.5 - Runtime Injection Protocols
+          </h2>
+          <h3 className="text-base text-gray-400">20-November-2025</h3>
+        </div>
+      </SectionHeader>
+      <ul className="list-disc pl-8 space-y-4 font-mono text-lg text-gray-300 tracking-wide leading-relaxed">
+        <li>
+          <strong className="text-green-400">Added</strong>: Implemented{" "}
+          <code>constructRegister</code> in the core <code>XRohr</code> class,
+          enabling programmatic route creation.
+        </li>
+        <li>
+          <strong className="text-yellow-400">Refactored</strong>: Streamlined{" "}
+          <code>ConstructTemplate</code> to strictly define <code>Memoria</code>
+          -bound endpoint structures.
+        </li>
+        <li>
+          <strong className="text-green-400">Fixed</strong>: Stabilized core
+          read/write operations within the <code>Memoria</code> caching module.
+        </li>
+        <li>
+          <strong className="text-green-400">Added</strong>: Extended utility
+          functions in <code>RouteManager</code> for better path handling.
+        </li>
+      </ul>
+
+      <SectionHeader>
+        <div className="w-full flex flex-row justify-between items-baseline font-mono tracking-widest px-2">
+          <h2 className="text-xl font-bold text-white">
+            v1.0.7 - Bug Fixes and Enhancements
+          </h2>
+          <h3 className="text-base text-gray-400">21-November-2025</h3>
+        </div>
+      </SectionHeader>
+      <ul className="list-disc pl-8 space-y-4 font-mono text-lg text-gray-300 tracking-wide leading-relaxed">
+        <li>
+          <strong className="text-green-400">Added</strong>: Enhanced console
+          logging output during the initialization sequence for improved modular
+          visibility and debugging.
+        </li>
+        <li>
+          <strong className="text-yellow-400">Refactored</strong>: Updated{" "}
+          <code>AxiosCall</code> configuration to support{" "}
+          <strong>lazy data evaluation</strong> (functions), allowing for
+          runtime payload resolution.
+        </li>
+        <li>
+          <strong className="text-yellow-400">Fixed</strong>: Corrected the
+          route registration logic in <code>ConstructLoader</code> to properly
+          propagate middleware chains to the Server instance.
+        </li>
+      </ul>
     </div>
   );
 }

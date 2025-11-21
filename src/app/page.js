@@ -111,7 +111,7 @@ export default function Home() {
         {/* Top Section / Header */}
         <div className={styles.header}>
           <p className={styles.headerText}>
-            {"Active Projects > XRohrJS > A mini-framework to built an Express RESTApi"}
+            {"Active Projects > XRohrJS > A mini-framework to build an Express RESTApi"}
           </p>
         </div>
 
