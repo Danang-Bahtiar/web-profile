@@ -20,5 +20,20 @@ export default function Discrafter() {
       label: "Discrafter",
     },
   };
-  return <Layout headers={header} content={<ProjectLayout detailPage={<Details />} logs={<Logs />} docs={<Docs />} faq={<FAQ/>} />} currentPageLabel={"Project"}/>;
+  return (
+    <Layout
+      headers={header}
+      content={
+        <ProjectLayout
+          tabs={[
+            { key: "details", label: "Details", content: <Details /> },
+            { key: "docs", label: "Docs", content: <Docs /> },
+            { key: "faq", label: "FAQ", content: <FAQ /> },
+            { key: "logs", label: "Logs", content: <Logs /> },
+          ]}
+        />
+      }
+      currentPageLabel={"Project"}
+    />
+  );
 }
