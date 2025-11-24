@@ -5,7 +5,7 @@ import Logs from "./Logs";
 import Docs from "./Docs";
 import FAQ from "./FAQ";
 
-export default function Discrafter() {
+export default function Armorize() {
   const header = {
     home: {
       slug: "/",
@@ -16,8 +16,8 @@ export default function Discrafter() {
       label: "Projects/",
     },
     armorize: {
-      slug: "/project/discrafter",
-      label: "Discrafter",
+      slug: "/project/armorize",
+      label: "Armorize",
     },
   };
   return (
