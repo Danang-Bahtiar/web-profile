@@ -9,7 +9,7 @@ export default {
     <div className="space-y-4 text-sm font-mono text-gray-300">
       {/* Identity */}
       <div className="border-l-2 border-cyan-500 pl-3">
-        <h4 className="text-cyan-400 font-bold">// IDENTITY</h4>
+        <h4 className="text-cyan-400 font-bold">{"// IDENTITY"}</h4>
         <ul className="list-none mt-1 space-y-1">
           <li>
             <span className="text-gray-500">GENRE ::</span> Creature-Collection
@@ -28,7 +28,7 @@ export default {
       {/* Influences */}
       <div>
         <h4 className="text-yellow-400 font-bold mb-2">
-          // REFERENCE_DATA (Inspirations)
+          {"// REFERENCE_DATA (Inspirations)"}
         </h4>
         <div className="grid grid-cols-1 gap-2">
           <div className="bg-gray-900 p-2 rounded border border-gray-800">

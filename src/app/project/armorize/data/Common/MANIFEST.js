@@ -10,7 +10,7 @@ export default {
       {/* The High-Level Pitch */}
       <div className="border-b border-gray-800 pb-4">
         <h3 className="text-cyan-400 font-bold text-lg mb-2">
-          // PROJECT_OVERVIEW
+          {"// PROJECT_OVERVIEW"}
         </h3>
         <p>
           <span className="text-white font-bold">Armorize</span> is a
@@ -51,7 +51,7 @@ export default {
 
       {/* The "Why" */}
       <div className="pt-2">
-        <h3 className="text-cyan-400 font-bold text-base mb-2">// OBJECTIVE</h3>
+        <h3 className="text-cyan-400 font-bold text-base mb-2">{"// OBJECTIVE"}</h3>
         <p>
           To bridge the gap between casual "Chat Bots" and full-scale "MMORPGs."
           Armorize allows players to engage in complex loops (Crafting, Taming,

@@ -10,7 +10,7 @@ export default {
         {/* Header Info */}
         <div className="bg-cyan-900/10 border-l-2 border-cyan-500 p-3">
           <h4 className="text-cyan-400 font-bold text-xs tracking-widest uppercase mb-1">
-            // GENETIC_OVERWRITE
+            {"// GENETIC_OVERWRITE"}
           </h4>
           <p className="text-sm text-gray-300">
             Traits are "born talents" imprinted on a Mystar's core. These

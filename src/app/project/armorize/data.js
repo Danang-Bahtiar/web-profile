@@ -109,7 +109,7 @@ export default function ArmorizeMainframe() {
         {/* Left: Database Icon + Path */}
         <div className="flex items-center gap-2 text-gray-500 font-mono text-sm">
           <FaDatabase />
-          <span>// ROOT_DIRECTORY / ARMORIZE_GDD</span>
+          <span>{"// ROOT_DIRECTORY / ARMORIZE_GDD"}</span>
         </div>
 
         {/* Right: Search Bar */}

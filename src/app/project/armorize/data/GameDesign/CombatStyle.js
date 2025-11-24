@@ -10,7 +10,7 @@ export default {
       {/* HEADER */}
       <div className="border-b border-cyan-900/50 pb-2 mb-4">
         <h4 className="text-cyan-400 font-bold text-xs tracking-widest uppercase">
-          // EXECUTION_MODE: SIMULTANEOUS_BLIND_PICK
+          {"// EXECUTION_MODE: SIMULTANEOUS_BLIND_PICK"}
         </h4>
         <p className="text-xs text-gray-500 mt-1">
           Both Tamers submit commands privately. Actions resolve based on Speed
@@ -46,7 +46,7 @@ export default {
       {/* THE TURN LOOP */}
       <div className="space-y-3 mt-4">
         <h5 className="text-cyan-400 font-bold text-xs uppercase border-l-2 border-cyan-500 pl-2">
-          // TURN_RESOLUTION_SEQUENCE
+          {"// TURN_RESOLUTION_SEQUENCE"}
         </h5>
 
         {/* PHASE 1 */}

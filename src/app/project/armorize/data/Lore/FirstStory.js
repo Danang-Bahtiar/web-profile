@@ -13,7 +13,7 @@ export default {
       {/* HEADER: Log Metadata */}
       <div className="flex items-center gap-3 text-[10px] text-gray-600 mb-6 border-b border-gray-800 pb-2">
         <span className="text-red-900">⚠ ERR_DATA_CORRUPTION</span>
-        <span>//</span>
+        <span>{"//"}</span>
         <span>RECOVERED_FRAGMENT_0XA1_Alpha</span>
       </div>
 

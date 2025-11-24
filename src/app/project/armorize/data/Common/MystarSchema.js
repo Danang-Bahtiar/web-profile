@@ -11,7 +11,7 @@ export default {
       <div className="space-y-6 font-mono text-sm text-gray-300">
         {/* HEADER */}
         <h3 className="text-lg font-bold text-cyan-400 border-b border-gray-800 pb-2">
-          // BASE_ENTITY_STRUCTURE
+          {"// BASE_ENTITY_STRUCTURE"}
         </h3>
 
         {/* STAT MAPPING */}
@@ -50,11 +50,11 @@ export default {
         {/* MongoDB Schema Concept */}
         <div>
           <h4 className="font-bold text-cyan-400 mb-2">
-            // MONGODB_DATA_MODEL
+            {"// MONGODB_DATA_MODEL (Schema Example)"}
           </h4>
           <pre className="bg-black p-3 text-xs overflow-auto border border-gray-700">
             <code className="text-green-400">
-              // Simplified Schema for MongoDB Atlas
+              {"// Simplified Schema for MongoDB Atlas"}
               <br />
               const MystarSchema = new Schema(
               <br />
@@ -80,7 +80,7 @@ export default {
         {/* TRAIT SYSTEM */}
         <div className="pt-2">
           <h4 className="font-bold text-cyan-400 mb-1">
-            // TRAIT_SYSTEM (Customization)
+            {"// TRAIT_SYSTEM (Customization)"}
           </h4>
           <p className="text-xs text-gray-500">
             Traits are randomly assigned upon encounter. The system supports

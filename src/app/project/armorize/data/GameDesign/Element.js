@@ -10,7 +10,7 @@ export default {
         {/* Introduction / Flavor Text */}
         <div className="border-l-2 border-cyan-500 pl-4 bg-cyan-900/10 p-2">
           <h4 className="text-cyan-400 font-bold text-xs tracking-widest uppercase mb-1">
-            // TACTICAL_ADVISORY
+            {"// TACTICAL_ADVISORY"}
           </h4>
           <p className="text-sm text-gray-300">
             Combat efficiency is determined by elemental alignment.

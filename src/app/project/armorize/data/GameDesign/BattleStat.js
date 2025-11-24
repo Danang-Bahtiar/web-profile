@@ -10,7 +10,7 @@ export default {
         {/* SECTION 1: Primary Attributes */}
         <div>
           <h4 className="text-cyan-400 font-bold text-xs tracking-widest uppercase mb-3 border-b border-cyan-900/50 pb-1">
-            // CORE_ATTRIBUTES
+            {"// CORE_ATTRIBUTES"}
           </h4>
           <div className="grid grid-cols-2 gap-2 text-sm">
             {/* Row 1 */}
@@ -53,7 +53,7 @@ export default {
             🧮
           </div>
           <h4 className="text-gray-400 font-bold text-xs tracking-widest uppercase mb-3">
-            // DERIVED_LOGIC
+            {"// DERIVED_LOGIC"}
           </h4>
 
           <div className="space-y-3 font-mono text-xs">
@@ -85,7 +85,7 @@ export default {
         {/* SECTION 3: Equipment Slots */}
         <div>
           <h4 className="text-gray-400 font-bold text-xs tracking-widest uppercase mb-3 border-b border-gray-800 pb-1">
-            // LOADOUT_SLOTS
+            {"// LOADOUT_SLOTS"}
           </h4>
           <div className="flex gap-4 justify-center text-center">
             {/* HEAD */}

@@ -10,7 +10,7 @@ export default {
       {/* Team & Tech */}
       <div className="flex justify-between items-start">
         <div>
-          <h4 className="text-cyan-400 font-bold">// PERSONNEL</h4>
+          <h4 className="text-cyan-400 font-bold">{"// PERSONNEL"}</h4>
           <p>
             Solo Architect <span className="text-gray-500">(Dan Koyuki)</span>
           </p>
@@ -19,7 +19,7 @@ export default {
           </p>
         </div>
         <div className="text-right">
-          <h4 className="text-cyan-400 font-bold">// ARCHITECTURE</h4>
+          <h4 className="text-cyan-400 font-bold">{"// ARCHITECTURE"}</h4>
           <p>
             XRohrJS <span className="text-gray-500">(Dual-Server)</span>
           </p>
@@ -30,7 +30,7 @@ export default {
       {/* Platforms */}
       <div>
         <h4 className="text-gray-400 font-bold border-b border-gray-800 mb-2">
-          // DEPLOYMENT_TARGETS
+          {"// DEPLOYMENT_TARGETS"}
         </h4>
         <ul className="space-y-2">
           <li className="flex items-center">

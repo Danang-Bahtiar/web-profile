@@ -29,7 +29,7 @@ export default {
         {/* The "Bug Report" List */}
         <div className="space-y-3">
           <h5 className="text-gray-500 text-xs uppercase tracking-widest border-b border-gray-800 pb-1">
-            // KNOWN_ANOMALIES
+            {"// KNOWN_ANOMALIES"}
           </h5>
 
           {/* Bug 1: Stat Reduction */}
