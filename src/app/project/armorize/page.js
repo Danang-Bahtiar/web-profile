@@ -26,10 +26,7 @@ export default function Armorize() {
       content={
         <ProjectLayout
           tabs={[
-            { key: "details", label: "Details", content: <Details /> },
-            { key: "docs", label: "Docs", content: <Docs /> },
-            { key: "faq", label: "FAQ", content: <FAQ /> },
-            { key: "logs", label: "Logs", content: <Logs /> },
+            { key: "details", label: "Details", content: <Details /> }
           ]}
         />
       }
