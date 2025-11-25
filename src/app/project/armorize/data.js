@@ -105,9 +105,9 @@ export default function ArmorizeMainframe() {
   return (
     <div>
       {/* Sticky Header */}
-      <div className="top-0 z-20 bg-gray-950/90 backdrop-blur-sm border-b border-gray-800 flex items-center justify-between gap-4 p-2">
+      <div className="z-20 bg-gray-950/90 backdrop-blur-sm border-b border-gray-800 flex items-center justify-between gap-4 p-2  md:flex-row flex-col">
         {/* Left: Database Icon + Path */}
-        <div className="flex items-center gap-2 text-gray-500 font-mono text-sm">
+        <div className="flex items-center gap-2 text-gray-300 font-mono text-sm">
           <FaDatabase />
           <span>{"// ROOT_DIRECTORY / ARMORIZE_GDD"}</span>
         </div>
@@ -119,7 +119,7 @@ export default function ArmorizeMainframe() {
             placeholder="Search code, title, category..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="bg-gray-900 border border-gray-700 text-gray-200 placeholder-gray-500 text-sm px-3 py-2 rounded focus:outline-none focus:border-cyan-500 w-64"
+            className="bg-gray-900 border border-gray-700 text-gray-200 placeholder-gray-300 text-sm px-3 py-2 rounded focus:outline-none focus:border-cyan-500 w-64"
           />
         </div>
       </div>
@@ -169,18 +169,18 @@ export default function ArmorizeMainframe() {
               <div>
                 <h3 className="text-lg font-bold text-white flex items-center gap-3 group-hover:translate-x-1 transition-transform">
                   {isLocked ? (
-                    <FaLock className="text-red-500 text-sm" />
+                    <FaLock className="text-red-500 text-sm shrink-0" />
                   ) : isDecrypted ? (
-                    <FaKey className="text-green-500 text-sm" />
+                    <FaKey className="text-green-500 text-sm shrink-0" />
                   ) : (
-                    <FaFolder className="text-yellow-600 text-sm" />
+                    <FaFolder className="text-yellow-600 text-sm shrink-0" />
                   )}
-                  {file.title}
+                  <span className="truncate">{file.title}</span>
                 </h3>
 
                 <p
                   className={`text-xs mt-2 line-clamp-2 ${
-                    isLocked ? "text-red-400/60" : "text-gray-500"
+                    isLocked ? "text-red-400/60" : "text-gray-300"
                   }`}
                 >
                   {isLocked
