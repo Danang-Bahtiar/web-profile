@@ -11,6 +11,7 @@ import {
 import commonData from "./data/commonData";
 import loreData from "./data/loreData";
 import gameDesignData from "./data/gameDesignData";
+import schemaData from "./data/schemaData";
 
 const DATABASE_FILESA = [
   {
@@ -34,7 +35,7 @@ const DATABASE_FILESA = [
 ];
 
 export default function ArmorizeMainframe() {
-  const DATABASE_FILES = [...commonData, ...loreData, ...gameDesignData];
+  const DATABASE_FILES = [...commonData, ...loreData, ...gameDesignData, ...schemaData];
   const [activeFile, setActiveFile] = useState(null);
   const [unlockedFiles, setUnlockedFiles] = useState([]);
   const [isDecrypting, setIsDecrypting] = useState(false);

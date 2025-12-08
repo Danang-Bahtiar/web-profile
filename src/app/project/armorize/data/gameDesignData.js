@@ -2,6 +2,7 @@ import BattleStat from "./GameDesign/BattleStat";
 import CombatStyle from "./GameDesign/CombatStyle";
 import Element from "./GameDesign/Element";
 import Equipment from "./GameDesign/Equipment";
+import StatModiefier from "./GameDesign/StatModiefier";
 import Trait from "./GameDesign/Trait";
 
-export default [Element, Trait, Equipment, BattleStat, CombatStyle]
+export default [Element, Trait, Equipment, BattleStat, StatModiefier, CombatStyle]

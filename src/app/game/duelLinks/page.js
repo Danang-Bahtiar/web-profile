@@ -26,6 +26,9 @@ const kogDecks = [
   { month: "OCT", year: "2025", deckName: "Full Metariactor", deckImage: "/game/duelLinks/ActorKOG.png" },
   { month: "NOV", year: "2025", deckName: "Floowandereeze", deckImage: "/game/duelLinks/FlooKC.png" },
   { month: "NOV", year: "2025", deckName: "Shinobird", deckImage: "/game/duelLinks/ShinobirdKOG.png" },
+  { month: "NOV", year: "2025", deckName: "Full Metariactor", deckImage: "/game/duelLinks/ActorKOG.png" },
+  { month: "DEC", year: "2025", deckName: "Predaplant", deckImage: "/game/duelLinks/PredaplantKOG.png" },
+  { month: "DEC", year: "2025", deckName: "Full Metariactor", deckImage: "/game/duelLinks/ActorKOG.png" },
 ];
 
 export default function DuelLinks() {
@@ -40,17 +43,17 @@ export default function DuelLinks() {
   const stats = {
     Speed: {
       rank: "King of Games",
-      kog: 11,
-      duels: 1847,
-      wins: 1128,
+      kog: 12,
+      duels: 2175,
+      wins: 1316,
       most: "Predaplant, Lyrilusc",
     },
     Rush: {
-      rank: "Gold Rank 1",
-      kog: 8,
-      duels: 736,
-      wins: 446,
-      most: "Cyber Dragon",
+      rank: "King of Games",
+      kog: 10,
+      duels: 822,
+      wins: 489,
+      most: "Cyber Dragon, Metarion",
     },
   };
 
