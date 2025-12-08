@@ -35,7 +35,12 @@ const DATABASE_FILESA = [
 ];
 
 export default function ArmorizeMainframe() {
-  const DATABASE_FILES = [...commonData, ...loreData, ...gameDesignData, ...schemaData];
+  const DATABASE_FILES = [
+    ...commonData,
+    ...loreData,
+    ...gameDesignData,
+    ...schemaData,
+  ];
   const [activeFile, setActiveFile] = useState(null);
   const [unlockedFiles, setUnlockedFiles] = useState([]);
   const [isDecrypting, setIsDecrypting] = useState(false);
@@ -48,12 +53,18 @@ export default function ArmorizeMainframe() {
     e.preventDefault();
     if (isDecrypting) return;
 
+    if (!activeFile || !activeFile.password) {
+      setErrorMsg("No active file or password set.");
+      return;
+    }
+
     setIsDecrypting(true);
     setErrorMsg("");
     setProgress(0);
 
     const isCorrect =
       inputPassword.toUpperCase() === activeFile.password.toUpperCase();
+
     const failPoint = Math.floor(Math.random() * 15) + 30;
     let current = 0;
 
