@@ -9,12 +9,12 @@ export default function Backend (){
       </div>
       <div className="text-right text-sm text-gray-700 space-y-1 py-3">
         <p>Bandung, Jawa Barat, 40614, Indonesia</p>
-        <p>
+        <div>
           <p className="font-semibold">+62 821-1642-4576</p>
           <a href="mailto:dankoyuki398@gmail.com" className="text-blue-700 hover:underline">dankoyuki398@gmail.com</a>
           <span className="mx-1">•</span>
-          <a href="#" className="text-blue-700 hover:underline">LinkedIn</a>
-        </p>
+          <a href="www.linkedin.com/in/dan-koyuki" className="text-blue-700 hover:underline">LinkedIn</a>
+        </div>
       </div>
     </div>
 

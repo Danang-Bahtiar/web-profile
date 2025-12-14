@@ -121,7 +121,7 @@ export default function Home() {
             {/* 1. Styled Image Wrapper */}
             <div className={styles.profileImageWrapper}>
               <Image
-                src={"/testpp.png"}
+                src={"/Portrait_Placeholder.png"}
                 alt="photo profile"
                 fill
                 className={styles.profileImage}

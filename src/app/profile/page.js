@@ -47,7 +47,7 @@ export default function Profile() {
             <div className={styles.imageWrapper}>
               <div className={styles.imageCircle}>
                 <Image
-                  src={"/testpp.png"}
+                  src={"/Portrait_Placeholder.png"}
                   alt="photo profile"
                   fill
                   className={styles.image}

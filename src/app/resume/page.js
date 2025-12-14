@@ -1,6 +1,8 @@
 import ResumeCard from "@/component/cards/resumeCard";
 import Layout from "@/component/layout/layout";
 import Backend from "./test";
+import WebDev from "./webdev";
+import WebDevIndo from "./webdevid";
 
 
 export default function Resume() {
@@ -23,6 +25,14 @@ export default function Resume() {
             <ResumeCard
               title="Backend Architecture Resume"
               ResumeContent={<Backend />}
+            />
+            <ResumeCard
+              title="[ENG] Web Developer Resume"
+              ResumeContent={<WebDev />}
+            />
+            <ResumeCard
+              title="[IND] Web Developer Resume"
+              ResumeContent={<WebDevIndo />}
             />
             {/* Add more ProjectCard components to see the scrolling effect */}
           </div>
