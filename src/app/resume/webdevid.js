@@ -35,15 +35,12 @@ export default function WebDevIndo() {
           Profil
         </h3>
         <p className="text-justify text-gray-800">
-          Seorang pengembang backend dengan fokus kuat pada arsitektur perangkat
-          lunak dan sistem terdistribusi. Telah mengembangkan XRohrJS, sebuah
-          framework Node.js proprietari untuk menangani situasi konkurensi
-          tinggi. Keahlian utama mencakup pengembangan infrastruktur backend
-          yang tangguh, serta penanganan 
-          <i> state</i> yang kompleks melalui <i>in-memory clustering</i>.
-          Bertujuan memanfaatkan pemahaman teknis mendalam mengenai TypeScript
-          dan Desain Basis Data untuk menciptakan aplikasi web yang dapat
-          diskalakan (<i>scalable</i>).
+          Pengembang Backend berpengalaman dalam merancang dan
+          mengimplementasikan arsitektur sistem terdistribusi skala tinggi.
+          Memiliki keahlian dalam Node.js/TypeScript, fokus pada ketersediaan
+          tinggi (high availability) dan kinerja melalui teknik in-memory
+          clustering dan kontrol konkurensi (Mutex). Berorientasi pada pembuatan
+          solusi backend yang scalable dan tangguh.
         </p>
       </div>
 
